@@ -7,4 +7,5 @@ mongoose.connect(process.env.MONGODB_URI || 'mongodb://localhost/serves-up', {
   useFindAndModify: false
 });
 
+mongoose.set( "debug", true );
 module.exports = mongoose.connection;
